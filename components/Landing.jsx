@@ -1,5 +1,8 @@
-import { IoIosArrowDown} from "react-icons/io";
+import { IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import { AiFillMessage } from "react-icons/ai";
+import { FaArrowUp } from "react-icons/fa";
+
 import { FaRegComment } from "react-icons/fa";
 import { ImQuotesLeft } from "react-icons/im";
 import { CiBookmark } from "react-icons/ci";
@@ -21,14 +24,17 @@ import heart1 from '../img/heart1.png';
 import heart2 from '../img/heart2.png';
 import arrow from '../img/arrow.png'
 import pic1 from '../img/pic1.jpeg'
+import { useState } from "react";
 const Landing=()=>{
+  const [drop, setDrop]=useState(false)
+  console.log(drop);
     return(
       <>
       <div className="container">
-            <nav>
+            <nav id="nav">
                 <div className="nav-div1">
                     <p className="logo">Logo</p>
-                    <p className="cat">CATEGORIES <IoIosArrowDown /></p>
+                    <p className="cat" onMouseEnter={()=>{setDrop(!drop)}}>CATEGORIES{drop?<IoIosArrowUp />:<IoIosArrowDown />} </p>
                 </div>
                 <div className="nav-div1">
                     <p className="teach">TEACH</p>
@@ -37,7 +43,23 @@ const Landing=()=>{
                     <button className="signup">SIGNUP</button>
                 </div>
             </nav>
-
+            {drop?<div className="drop">
+              <div className="drop1">
+              <a href="#class">Classes</a>
+              <a href="#cat">Category</a>
+              <a href="#features">Features</a>
+              <a href="#community">Community</a>
+              <a href="#teachers">Teachers</a>
+              <a href="#blogs">Blogs</a>
+              <a href="#foot">Contact</a>
+              </div>
+              <div>
+              <img className="background-img2" src={bg} alt="bg"/>
+              <img className="frn-image2" src={bgg1} alt="bg"/>
+              </div>
+            </div>:null}
+<div><button className="floating-button"><AiFillMessage /></button>
+<button className="floating-button1"><a href="#nav"><FaArrowUp /></a></button></div>
             <section>
               <div className="start">
                 <div className="sta-d1">
@@ -189,7 +211,7 @@ const Landing=()=>{
                 </div>
             </section>
 
-            <section>
+            <section id="class">
               <div className="sec3-cont">
                 <div className="sec3-cont1">
                   <p className="discover">Discover Classes</p>
@@ -275,7 +297,7 @@ const Landing=()=>{
               </div>
             </section>
 
-            <section>
+            <section id="cat">
               <p className="bro">Browse by category</p>
               <div className="culture">
                 <div className="img-card">
@@ -330,7 +352,7 @@ const Landing=()=>{
               </div>
             </section>
 
-            <section>
+            <section id='features'>
               <p className="bro">Six reasons to choose our class</p>
               <div className="face">
                 <div className="svgg">
@@ -588,7 +610,7 @@ const Landing=()=>{
               </div>
             </section>
 
-            <section>
+            <section id="community">
               <p className="bro">Love from community</p>
               <div className="portfo-card">
                 <div className="portfolio">
@@ -621,7 +643,7 @@ const Landing=()=>{
               </div>
             </section>
 
-            <section className="sec">
+            <section id="teachers" className="sec">
               <p className="bro">Meet our teachers</p>
             </section>
             <SimpleSlider/>
@@ -647,7 +669,7 @@ const Landing=()=>{
               </div>
             </section>
 
-            <section>
+            <section id="blogs">
             <div className="sec3-cont1">
                   <p className="discover">Our blogs</p>
                   <p className="show1">SHOW ALL</p>
@@ -695,7 +717,7 @@ const Landing=()=>{
             </div>
             </section>
         </div>
-      <footer className="footer">
+      <footer id="foot" className="footer">
             <div className="footer1">
               <div>
                 <p id="extra">class categories</p>

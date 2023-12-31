@@ -99,6 +99,108 @@ nav {
 }
 
 
+/* drop down */
+.frn-image2{
+  position: relative;
+  height: 270px;
+  width: 270px;
+  -webkit-mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoMjQ4LCAxMTcsIDU1LCAxKSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHN0b3AgaWQ9InN0b3AyIiBzdG9wLWNvbG9yPSJyZ2JhKDI1MSwgMTY4LCAzMSwgMSkiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgICAgICAgICAgICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgICAgICAgICAgICAgIDwvZGVmcz4KICAgICAgICAgICAgICAgIDxwYXRoIGZpbGw9InVybCgjc3ctZ3JhZGllbnQpIiBkPSJNMjEuNCwtMzAuN0MyOCwtMjksMzMuOSwtMjMuNiwzNC40LC0xNy4yQzM1LC0xMC45LDMwLjMsLTMuNiwyOC40LDMuNUMyNi42LDEwLjcsMjcuNSwxNy43LDI0LjYsMjEuNkMyMS43LDI1LjUsMTQuOCwyNi4yLDguNSwyNy40QzIuMiwyOC42LC0zLjYsMzAuMiwtMTAuMywzMC4zQy0xNywzMC41LC0yNC42LDI5LjIsLTMwLjUsMjVDLTM2LjUsMjAuOCwtNDAuOCwxMy42LC00Mi4xLDUuOUMtNDMuNCwtMS44LC00MS42LC0xMCwtMzYuNSwtMTQuOEMtMzEuNCwtMTkuNiwtMjIuOSwtMjEuMSwtMTYuMywtMjIuOEMtOS42LC0yNC41LC00LjgsLTI2LjYsMS4zLC0yOC41QzcuNCwtMzAuNSwxNC43LC0zMi41LDIxLjQsLTMwLjdaIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MCA1MCkiIHN0cm9rZS13aWR0aD0iMCIgc3R5bGU9InRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2UgMHM7Ij48L3BhdGg+CiAgICAgICAgICAgICAgPC9zdmc+);
+}
+.background-img2{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+}
+.drop{
+  opacity: 1;
+  position: absolute;
+  background-color:#2430A0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+.drop a{
+  font-family: "Nunito Sans";
+  text-align: left;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #FFFFFF;
+  gap: 5px;
+}
+.drop a:Hover{
+  color: #51557D
+}
+.drop1{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*floating button*/
+.floating-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color:#2430a0;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  /* Add additional styles as needed */
+}
+
+.floating-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+.floating-button1 {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  width: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color:#2430a0;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  /* Add additional styles as needed */
+}
+.floating-button1 a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.floating-button1:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+/*jnjdsncjskdcnksc*/
+
+
+
+
+
+
+
+
 /* section 1 */
 .start{
   display: flex;
