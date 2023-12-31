@@ -1072,3 +1072,60 @@ font-weight: 600;
   font-weight: 600;
   color: #51557D;
 }
+
+
+
+
+/*responsive*/
+@media only screen and (max-width: 600px) {
+
+ #root{
+  width: 200%;
+ }
+ .start{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  
+ }
+ .sta-d1{
+  width: 40%;
+ }
+ .frn-img1{
+  display: hidden;
+ }
+ .portfo-card,.p-card{
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+ }
+ #det1{
+  font-size: x-large;
+ }
+ .culture,.learn-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+ }
+ .bro,.discover{
+  font-size:x-large;
+  margin-right: 0;
+ }
+ .show{
+  margin-left: -8rem;
+ }
+ .background-img{
+ visibility: hidden;
+ }
+ .frn-image{
+  margin-top: 10rem;
+  height:100%;
+  width: 100%;
+  mask-repeat: no-repeat;
+ }
+ .drop{
+  width: 100%;
+ }
+}
